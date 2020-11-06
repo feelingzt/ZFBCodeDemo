@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>花呗</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>账户余额</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>余额宝</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>招商银行储蓄卡（0123）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中国工商银行储蓄卡（0123）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>招商银行信用卡（0123）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中国农业银行信用卡（0123）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中国银行储蓄卡（1202）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中国光大银行储蓄卡（8888）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>平安银行储蓄卡（9089）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>平安银行信用卡（0102）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>中国工商银行信用卡（9898）</string>
+	</dict>
+</array>
+</plist>

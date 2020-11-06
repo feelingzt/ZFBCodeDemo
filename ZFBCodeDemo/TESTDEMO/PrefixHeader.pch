@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  TESTDEMO
+//
+//  Created by 张涛 on 2020/10/27.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Masonry.h"
+#import "TTBaseViewController.h"
+
+#pragma mark - ========== 宏定义 =========
+
+
+/* 屏幕宽度 */
+#define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+
+/* 屏幕高度 */
+#define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+
+// 屏幕宽度
+#define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+
+//屏幕高度
+#define DCScreenH \
+([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? [UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale : [UIScreen mainScreen].bounds.size.height)
+
+//屏幕宽度
+#define DCScreenW \
+([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? [UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale : [UIScreen mainScreen].bounds.size.width)
+
+// 日志函数: 增加打印的信息
+#define UENNSLog(format, ...) do {                                          \
+fprintf(stderr, "--------------\n");                                        \
+fprintf(stderr, "<%s : %d> %s\n",                                           \
+[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],  \
+__LINE__, __func__);                                                        \
+(NSLog)((format), ##__VA_ARGS__);                                           \
+fprintf(stderr, "--------------\n");                                        \
+} while (0)
+
+// 颜色
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+#endif /* PrefixHeader_pch */
