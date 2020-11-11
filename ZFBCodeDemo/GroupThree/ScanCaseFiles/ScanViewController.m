@@ -95,6 +95,13 @@ AVCaptureVideoDataOutputSampleBufferDelegate // 识别光线强弱代理回调
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    // ***刷新当前页面, 相当于重新扫描***
+    if (![_session isRunning]) {
+        [self setUpBase];
+        [self setupCamera];
+    }
+    
 }
 
 - (void)viewDidLoad {
@@ -354,6 +361,7 @@ AVCaptureVideoDataOutputSampleBufferDelegate // 识别光线强弱代理回调
                     [weakSelf.navigationController popViewControllerAnimated:YES];
                 }];
             }else{
+                [weakSelf dismissViewControllerAnimated:YES completion:nil];
                 [UENScanTool showAlterViewWithVC:self
                                    WithReadTitle:@"温馨提示"
                                  WithReadMessage:@"未能识别到任何二维码、条形码，请重新识别!"

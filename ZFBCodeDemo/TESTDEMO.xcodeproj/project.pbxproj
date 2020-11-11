@@ -140,8 +140,7 @@
 		492DD2642547FF2A00EB15AF = {
 			isa = PBXGroup;
 			children = (
-				492DD2FC25483FEA00EB15AF /* CustomLibExtension */,
-				492DD2FB25483F3400EB15AF /* LibExtension(第三方) */,
+				492DD2FB25483F3400EB15AF /* CustomThirdLib(第三方) */,
 				492DD2DF2548398400EB15AF /* GroupOne */,
 				492DD2ED25483C9A00EB15AF /* GroupTwo */,
 				493D0AFF2554DA3A00CC6103 /* GroupThree */,
@@ -259,19 +258,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		492DD2FB25483F3400EB15AF /* LibExtension(第三方) */ = {
+		492DD2FB25483F3400EB15AF /* CustomThirdLib(第三方) */ = {
 			isa = PBXGroup;
 			children = (
 				492DD2FD2548401D00EB15AF /* Masonry */,
 			);
-			path = "LibExtension(第三方)";
-			sourceTree = "<group>";
-		};
-		492DD2FC25483FEA00EB15AF /* CustomLibExtension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomLibExtension;
+			path = "CustomThirdLib(第三方)";
 			sourceTree = "<group>";
 		};
 		492DD2FD2548401D00EB15AF /* Masonry */ = {
